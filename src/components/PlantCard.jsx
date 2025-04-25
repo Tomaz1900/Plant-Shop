@@ -1,5 +1,6 @@
 import Button from "./Button";
 import "./components-styles/PlantCard.css";
+import Image from "./Image";
 
 export default function PlantCard({ plantId, title, imgSrc, price, discount }) {
   const discountedPrice = discount
@@ -15,7 +16,8 @@ export default function PlantCard({ plantId, title, imgSrc, price, discount }) {
               <div>off</div>
             </div>
           )}
-          <img src={imgSrc} alt={title} />
+          <Image className={"plant-img"} src={imgSrc} alt={title} />
+          {/* <img src={imgSrc} alt={title} className="plant-img" /> */}
         </div>
         <div className="card-text">
           <h3 className="plant-title">{title}</h3>

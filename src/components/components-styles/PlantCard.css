@@ -11,9 +11,22 @@
 }
 .card-text {
   margin-top: 16px;
+  margin-bottom: auto;
 }
 .img-box {
   position: relative;
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.plant-img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 .discount-block {
   position: absolute;

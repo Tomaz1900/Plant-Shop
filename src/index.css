@@ -26,3 +26,21 @@
 .light-bg {
   background-color: var(--bggreen);
 }
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.example {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 48px;
+  text-align: center;
+}
+.header-links .active {
+  color: var(--green);
+}
+.active {
+  color: var(--green);
+}

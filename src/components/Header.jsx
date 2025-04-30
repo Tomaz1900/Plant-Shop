@@ -2,6 +2,7 @@ import "./components-styles/Header.css";
 import LOGO from "../assets/img/Logo.svg";
 import Search from "../assets/img/Search.svg";
 import Cart from "../assets/img/cart.svg";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -11,10 +12,10 @@ export default function Header() {
           <img src={LOGO} alt="LOGO" />
         </a>
         <nav className="header-links">
-          <a href="">HOME</a>
-          <a href="">PRODUCTS</a>
-          <a href="">ABOUT US</a>
-          <a href="">CONTACT US</a>
+          <NavLink to="/">HOME</NavLink>
+          <NavLink to="/products">PRODUCTS</NavLink>
+          <NavLink to="/about">ABOUT US</NavLink>
+          <NavLink to="/contact">CONTACT US</NavLink>
         </nav>
         <div className="header-right">
           <div className="header-search">
